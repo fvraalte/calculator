@@ -1,5 +1,100 @@
-.App {
+.buttons button.divide {
+  background: #ffeb3b;
+  color: #333;
+  font-weight: bold;
+}
+.buttons button.divide:hover {
+  background: #fdd835;
+}
+.buttons button.operator {
+  background: #fff9c4;
+  color: #333;
+  font-weight: bold;
+}
+.buttons button.operator:hover {
+  background: #fffde7;
+}
+
+.calculator-container {
+  max-width: 320px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #7c3aed;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   text-align: center;
+  color: #fff;
+}
+
+.display {
+  margin-bottom: 16px;
+}
+
+.display input {
+  width: 90%;
+  font-size: 1.5rem;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: right;
+}
+
+.result {
+  font-size: 1.2rem;
+  color: #333;
+  min-height: 1.5em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 16px 0;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Number buttons orange */
+.buttons button:nth-child(-n+16):not(.equals):not(.clear) {
+  background: #ff9800;
+  color: #fff;
+}
+.buttons button:nth-child(-n+16):not(.equals):not(.clear):hover {
+  background: #fb8c00;
+}
+
+/* Operator buttons yellow */
+.buttons button.operator {
+  background: #ffeb3b;
+  color: #333;
+  font-weight: bold;
+}
+.buttons button.operator:hover {
+  background: #fdd835;
+}
+
+.buttons button:hover {
+  background: #bdbdbd;
+}
+
+.buttons .equals {
+  grid-column: span 2;
+  background: #4caf50;
+  color: #fff;
+}
+
+.buttons .clear {
+  grid-column: span 2;
+  background: #f44336;
+  color: #fff;
 }
 
 .App-logo {

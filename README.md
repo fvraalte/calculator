@@ -68,3 +68,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Simple Calculator Web Application
+
+This project is a simple calculator built with React. It allows users to perform basic arithmetic operations (addition, subtraction, multiplication, division) with a clean and modern UI.
+
+## Features
+- Number input
+- Operations: +, -, *, /
+- Result display
+- Calculator background is purple
+- Number buttons are orange
+
+## Getting Started
+
+1. Install dependencies:
+   ```
+npm install
+   ```
+2. Start the development server:
+   ```
+npm start
+   ```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## License
+MIT
